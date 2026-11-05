@@ -1,0 +1,12 @@
+# ambiente
+.env
+.env.*
+!.env.example
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# logs e temporários
+*.log
+*.tmp
