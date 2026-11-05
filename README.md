@@ -90,4 +90,6 @@ Detalhe em [`docs/product/PRD.md`](docs/product/PRD.md) §17.
 
 ## Licença
 
-A definir (decisão aberta `OPEN-047`).
+[Apache License 2.0](LICENSE) — © 2026 André Lobo (andrelobo).
+
+A licença cobre código e documentação; marca e identidade visual não são licenciadas (ADR-025).

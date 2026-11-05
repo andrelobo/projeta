@@ -1,6 +1,6 @@
 # ADR-018 — Storage S3-compatible privado com URLs assinadas e varredura
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** RF-040, RF-090, RF-093, RNF-020

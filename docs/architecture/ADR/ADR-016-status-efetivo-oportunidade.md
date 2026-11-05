@@ -1,6 +1,6 @@
 # ADR-016 — Status editorial persistido + status efetivo derivado + verificação
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** RF-033, RF-038, RB-019

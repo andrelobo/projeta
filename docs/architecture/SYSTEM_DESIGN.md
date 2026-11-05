@@ -2,7 +2,7 @@
 
 **Versão:** 1.0 (proposta)
 **Status:** aguardando aprovação humana
-**Base:** PRD 1.0 + Emenda 01 · ADR-001 a ADR-010 (aceitos) · ADR-011 (rejeitado) · ADR-021/022/024 (aceitos) · ADR-012 a ADR-020 e ADR-023 (propostos)
+**Base:** PRD 1.0 + Emenda 01 · ADR-001 a ADR-010 (aceitos) · ADR-011 (rejeitado) · ADR-012 a ADR-025 (aceitos)
 **Última atualização:** 2026-11-05
 
 > Este documento descreve **como** o sistema será construído para atender ao PRD. Ele não substitui as especificações por módulo (`docs/specifications/`), que contêm contratos e critérios de aceite.

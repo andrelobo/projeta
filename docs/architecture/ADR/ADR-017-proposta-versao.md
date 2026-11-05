@@ -1,6 +1,6 @@
 # ADR-017 — Proposta = ProjectOpportunity; versões escopadas por proposta
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** RF-066, RF-068, RF-069, RB-011

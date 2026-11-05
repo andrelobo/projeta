@@ -4,7 +4,7 @@
 |:--|:--|
 | ID | SPEC-000 |
 | Versão | 0.1 |
-| Status | Rascunho |
+| Status | Aprovada (2026-11-05) |
 | Fase | 0 |
 | Dono | System Architect |
 | Depende de | — |

@@ -1,6 +1,6 @@
 # ADR-013 — Dinheiro em Decimal128 + tipo Money
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** RB-004, RF-072

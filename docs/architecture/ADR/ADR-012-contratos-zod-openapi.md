@@ -1,6 +1,6 @@
 # ADR-012 — Contratos primeiro: Zod como fonte de verdade + OpenAPI gerado
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** ADR-001, RNF-017

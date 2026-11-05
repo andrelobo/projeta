@@ -57,15 +57,16 @@ Dois domínios independentes: **CULTURE** (MVP) e **HEALTH** (futuro, não funci
 ### 3.2 Decisões aprovadas nesta fase
 
 - **Polyrepo no GitHub**: `projeta` (docs), `projeta-web` (Vercel) e `projeta-api` (VPS), sob o owner `andrelobo` (conta pessoal), repositórios **públicos**. Monorepo rejeitado pelo Product Owner (ADR-021).
+- **Licença Apache-2.0** nos três repositórios (ADR-025).
 - **Todo deploy é via GitHub Actions** (ADR-024): Vercel por CLI e API por GHCR + SSH na VPS. Imagem GHCR privada.
 - `projeta-api` publica `@projeta/contracts`; `projeta-web` fixa a versão exata.
 - Deploy: web na Vercel; API/worker em VPS com Docker Compose e Caddy (ADR-022). A VPS é operada pelo usuário `lobojoe`.
 - `projeta-api` publica `@projeta/contracts` no GitHub Packages; `projeta-web` fixa a versão exata.
 - PRD recebeu a Emenda 01 (`docs/product/PRD_ERRATA.md`), que substitui o §9.1.
 
-### 3.3 Propostas pendentes de aprovação
+### 3.3 Aprovadas junto com o plano (2026-11-05)
 
-- Autenticação cross-domain e previews (ADR-023; `OPEN-051`).
+- Autenticação cross-domain e previews (ADR-023).
 - Contratos primeiro: Zod como fonte de verdade, OpenAPI gerado.
 - Dinheiro em `Decimal128` no banco + `Money` em minor units na aplicação.
 - Autenticação por cookie `httpOnly` + rotação de refresh + CSRF.

@@ -15,19 +15,20 @@ Decisões arquiteturais do PROJETA. ADRs **Aceitos** vieram do PRD 1.0. ADRs **P
 | [ADR-009](ADR-009-multi-tenancy-fundacao.md) | Multi-tenancy na fundação | Aceito | Autorização |
 | [ADR-010](ADR-010-sdd-obrigatorio.md) | SDD obrigatório | Aceito | Processo |
 | [ADR-011](ADR-011-monorepo-pnpm.md) | Monorepo pnpm | **Rejeitado** | Tooling |
-| [ADR-012](ADR-012-contratos-zod-openapi.md) | Zod + OpenAPI + Problem Details | Proposto | Contratos |
-| [ADR-013](ADR-013-money-decimal128.md) | Money/Decimal128 | Proposto | Dinheiro |
-| [ADR-014](ADR-014-auth-cookie-csrf.md) | Cookie httpOnly + CSRF | Proposto | Autenticação |
-| [ADR-015](ADR-015-ownership-tenantkey.md) | OwnerRef + tenantKey | Proposto | Tenancy |
-| [ADR-016](ADR-016-status-efetivo-oportunidade.md) | Status efetivo + verificação | Proposto | Radar |
-| [ADR-017](ADR-017-proposta-versao.md) | Proposta × versão | Proposto | Projetos |
-| [ADR-018](ADR-018-storage-s3-assinado.md) | Storage S3 assinado | Proposto | Documentos |
-| [ADR-019](ADR-019-jobs-idempotencia-outbox.md) | Idempotência + outbox + DLQ | Proposto | Filas |
-| [ADR-020](ADR-020-prompt-registry-custo.md) | Prompt registry + custo | Proposto | IA |
+| [ADR-012](ADR-012-contratos-zod-openapi.md) | Zod + OpenAPI + Problem Details | Aceito | Contratos |
+| [ADR-013](ADR-013-money-decimal128.md) | Money/Decimal128 | Aceito | Dinheiro |
+| [ADR-014](ADR-014-auth-cookie-csrf.md) | Cookie httpOnly + CSRF | Aceito | Autenticação |
+| [ADR-015](ADR-015-ownership-tenantkey.md) | OwnerRef + tenantKey | Aceito | Tenancy |
+| [ADR-016](ADR-016-status-efetivo-oportunidade.md) | Status efetivo + verificação | Aceito | Radar |
+| [ADR-017](ADR-017-proposta-versao.md) | Proposta × versão | Aceito | Projetos |
+| [ADR-018](ADR-018-storage-s3-assinado.md) | Storage S3 assinado | Aceito | Documentos |
+| [ADR-019](ADR-019-jobs-idempotencia-outbox.md) | Idempotência + outbox + DLQ | Aceito | Filas |
+| [ADR-020](ADR-020-prompt-registry-custo.md) | Prompt registry + custo | Aceito | IA |
 | [ADR-021](ADR-021-polyrepo.md) | Polyrepo: docs, web e API | Aceito | Repositórios |
 | [ADR-022](ADR-022-deploy-vercel-vps.md) | Deploy Vercel + VPS (topologia) | Aceito | Infraestrutura |
-| [ADR-023](ADR-023-auth-cross-domain.md) | Auth Vercel ↔ VPS | Proposto | Autenticação |
+| [ADR-023](ADR-023-auth-cross-domain.md) | Auth Vercel ↔ VPS | Aceito | Autenticação |
 | [ADR-024](ADR-024-deploy-github-actions.md) | Deploy via GitHub Actions | Aceito | Deploy |
+| [ADR-025](ADR-025-licenca-apache-2.md) | Licença Apache-2.0 | Aceito | Legal |
 
 ## Como propor um novo ADR
 

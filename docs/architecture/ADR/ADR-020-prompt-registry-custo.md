@@ -1,6 +1,6 @@
 # ADR-020 — Registry versionado de prompts e livro-razão de custo de IA
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** ADR-005, RB-010, §7.6, RNF-021

@@ -1,6 +1,6 @@
 # ADR-015 — OwnerRef e tenantKey em todo recurso privado
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** ADR-009, RB-005, RB-007

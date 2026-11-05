@@ -1,6 +1,6 @@
 # ADR-019 — Jobs idempotentes, outbox transacional e DLQ
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** ADR-004, RNF-009, RNF-019, RB-017

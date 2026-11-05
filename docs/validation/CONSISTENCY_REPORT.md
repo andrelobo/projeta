@@ -20,7 +20,7 @@
 | Lacunas de modelo/entidade | 9 |
 | Lacunas de segurança/LGPD/operação | 13 |
 | Assunções explícitas (ASM) | 9 |
-| Decisões abertas (OPEN) | 50 |
+| Decisões abertas (OPEN) | 48 |
 
 **Cobertura:** todos os 75 RF estão mapeados para uma spec (`docs/specifications/README.md` §2). Todos os 20 RB têm local de implementação (`DOMAIN_MODEL` §9). Todos os 22 RNF têm tratamento em SPEC-000 ou na spec do módulo.
 

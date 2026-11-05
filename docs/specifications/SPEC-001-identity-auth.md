@@ -4,7 +4,7 @@
 |:--|:--|
 | ID | SPEC-001 |
 | Versão | 0.1 |
-| Status | Rascunho |
+| Status | Aprovada (2026-11-05) |
 | Fase | 1 |
 | Dono | Backend |
 | Depende de | SPEC-000 |

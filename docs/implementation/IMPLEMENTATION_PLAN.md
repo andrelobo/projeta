@@ -1,7 +1,7 @@
 # Plano de implementação — PROJETA
 
-**Versão:** 1.0 (proposta)
-**Status:** aguardando aprovação humana
+**Versão:** 1.0
+**Status:** Aprovado em 2026-11-05 pelo Product Owner
 **Regra:** nenhuma linha de aplicação é escrita antes da aprovação deste plano.
 
 ---
@@ -277,9 +277,10 @@ Um milestone só é concluído quando:
 
 Para iniciar M0, são necessários:
 
-- [ ] Aprovação deste plano.
-- [ ] Aprovação de ADR-012 a ADR-023 (ADR-011 rejeitado).
+- [x] Aprovação deste plano (2026-11-05).
+- [x] ADR-012 a ADR-025 aprovados (ADR-011 rejeitado).
 - [ ] Aprovação das specs SPEC-000 a SPEC-004 (primeiro bloco).
-- [ ] Resolução de OPEN-002, OPEN-008 e OPEN-047.
-- [ ] Criação dos três repositórios em `github.com/andrelobo` e definição da política de branches.
+- [ ] Resolução de OPEN-002 e OPEN-008.
+- [x] Criação dos três repositórios em `github.com/andrelobo`.
+- [x] Licença definida (Apache-2.0).
 - [ ] Confirmação de que não há dado real de cliente no ambiente de desenvolvimento.

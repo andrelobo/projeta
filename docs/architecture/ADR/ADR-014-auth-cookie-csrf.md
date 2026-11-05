@@ -1,6 +1,6 @@
 # ADR-014 — Autenticação por cookie httpOnly + refresh rotativo + CSRF
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisores:** System Architect
 - **Relacionado:** RF-002, §11

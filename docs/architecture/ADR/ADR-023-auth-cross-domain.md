@@ -1,6 +1,6 @@
 # ADR-023 — Autenticação entre Vercel e VPS (domínios e previews)
 
-- **Status:** Proposto — requer aprovação
+- **Status:** Aceito (2026-11-05, aprovado com o plano)
 - **Data:** 2026-11-05
 - **Decisor:** System Architect
 - **Relacionado:** ADR-014, ADR-021, ADR-022

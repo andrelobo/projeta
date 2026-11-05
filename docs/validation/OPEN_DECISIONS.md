@@ -11,8 +11,8 @@
 
 | Milestone | Decisões |
 |:--|:--|
-| M0 | OPEN-002, OPEN-008, OPEN-047 |
-| M1 | OPEN-010, OPEN-011, OPEN-051 |
+| M0 | OPEN-002, OPEN-008 |
+| M1 | OPEN-010, OPEN-011 |
 | M3 | OPEN-003, OPEN-023 |
 | M4 | OPEN-016, OPEN-018 |
 | M5 | OPEN-021, OPEN-024, OPEN-048, OPEN-020, OPEN-022 |
@@ -72,11 +72,9 @@
 | OPEN-044 | Admin | Impersonação de usuário? | alto | sim vs não | não no MVP | Fase 4 |
 | OPEN-045 | LGPD | Retenção de auditoria? | médio | 1/2/5 anos | 2 anos para admin/financeiro | Transversal |
 | OPEN-046 | Admin | Restringir admin por IP/VPN? | médio | sim vs não | sim para PLATFORM_ADMIN em produção | M8 |
-| OPEN-047 | Legal | Licença do projeto? | alto (repos públicos) | proprietária/source-available vs open source (MIT/Apache-2.0) | decidir antes de publicar; sem licença o código público fica “all rights reserved” | M0 |
 | OPEN-048 | IA | Provedor principal e fallback? | alto | OpenAI, Anthropic, DeepSeek, Google | avaliar qualidade/custo em 10 editais antes de decidir | M5 |
 | OPEN-049 | Escopo | M08/M09 são MVP ou Fase 2? | alto | MVP vs Fase 2 | Fase 2, conforme roadmap §17 | M0 |
 | OPEN-050 | Operação | RPO/RTO de backup? | médio | 24h/4h; 8h/1h | RPO 24h, RTO 8h no MVP | M0 |
-| OPEN-051 | Auth | Como autenticar em previews da Vercel? | médio | mock vs BFF | mock no MVP; BFF se necessário | M1 |
 
 ---
 
@@ -85,6 +83,8 @@
 | ID | Data | Decisão | Autoridade | Documento |
 |:--|:--|:--|:--|:--|
 | OPEN-052 | 2026-11-05 | Repositórios no GitHub sob o owner **`andrelobo`** (conta pessoal), **públicos**; deploy via GitHub Actions; VPS operada por `lobojoe` | Product Owner | ADR-021, ADR-022, ADR-024 |
+| OPEN-047 | 2026-11-05 | Licença **Apache-2.0** nos três repositórios | Product Owner (delegou) | ADR-025 |
+| OPEN-051 | 2026-11-05 | Previews da Vercel em modo mock; BFF apenas se necessário | Product Owner (com o plano) | ADR-023 |
 
 As demais decisões arquiteturais estão em ADR-001 a ADR-024 (as propostas ainda dependem de aprovação).
 
