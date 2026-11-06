@@ -6,7 +6,7 @@
 - Atualizado em: 2026-11-06
 - Milestone: **Engineering Foundation 0.1**
 - Estado: **plano, specs e decisões de fundação aprovados; M0 desbloqueado**
-- Próxima ação: executar M0.3 (API shell com health e Problem Details)
+- Próxima ação: executar M0.4 (web shell com tema, páginas de erro e acessibilidade)
 
 ---
 
@@ -39,7 +39,7 @@ Dois domínios independentes: **CULTURE** (MVP) e **HEALTH** (futuro, não funci
 | Reconciliação de status (2026-11-06) | `docs/validation/STATUS_RECONCILIATION_2026-11-06.md` |
 | Decisões abertas | `docs/validation/OPEN_DECISIONS.md` |
 | Progresso do M0 | `docs/implementation/M0_PROGRESS.md` |
-| Código | Fundação M0.1/M0.2 em `projeta-api` e `projeta-web`; sem funcionalidade de produto |
+| Código | Fundação M0.1 a M0.3 em `projeta-api` e `projeta-web`; sem funcionalidade de produto |
 
 ## 3. Decisões já tomadas
 
@@ -121,12 +121,12 @@ Glossário completo: `docs/product/GLOSSARY.md`.
 
 ## 7. Próximo passo
 
-O plano, o primeiro bloco de specs e as decisões de fundação estão aprovados em `docs/implementation/APPROVALS.md`. O **M0.1** (bootstrap) e o **M0.2** (config tipada) foram concluídos em 2026-11-06 — evidências em `docs/implementation/M0_PROGRESS.md`.
+O plano, o primeiro bloco de specs e as decisões de fundação estão aprovados em `docs/implementation/APPROVALS.md`. O **M0.1** (bootstrap), o **M0.2** (config tipada) e o **M0.3** (API shell) foram concluídos em 2026-11-06 — evidências em `docs/implementation/M0_PROGRESS.md`.
 
 Continuar o M0 conforme `docs/implementation/IMPLEMENTATION_PLAN.md`:
 
 1. ~~bootstrap dos repositórios `projeta-web` e `projeta-api`~~;
-2. ~~config tipada e ambiente local~~ (config concluída; ambiente local é M0.5);
-3. health, erros, logs e OpenAPI;
-4. CI e harness de testes;
+2. ~~config tipada~~ (ambiente local é M0.5);
+3. ~~health e Problem Details~~; faltam logs (M0.6) e OpenAPI (M0.7);
+4. web shell (M0.4), ambiente local, CI e harness de testes;
 5. só então identidade e tenancy.
