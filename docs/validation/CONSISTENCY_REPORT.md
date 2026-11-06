@@ -20,7 +20,7 @@
 | Lacunas de modelo/entidade | 9 |
 | Lacunas de segurança/LGPD/operação | 13 |
 | Assunções explícitas (ASM) | 9 |
-| Decisões abertas (OPEN) | 48 |
+| Decisões abertas (OPEN) | 50 (48 em 2026-11-05 + OPEN-053 e OPEN-054) |
 
 **Cobertura:** todos os 75 RF estão mapeados para uma spec (`docs/specifications/README.md` §2). Todos os 20 RB têm local de implementação (`DOMAIN_MODEL` §9). Todos os 22 RNF têm tratamento em SPEC-000 ou na spec do módulo.
 
@@ -141,6 +141,8 @@ Nenhum RF ficou órfão. Nenhuma spec cobre requisito inexistente.
 ---
 
 ## 7. O que foi decidido sem base explícita no PRD
+
+> **Atualização (2026-11-06):** os itens 1 a 11 abaixo foram aprovados com o plano e constam como ADRs aceitos. A lista permanece como registro histórico da origem das decisões. Ver `APPROVALS.md` e `docs/validation/STATUS_RECONCILIATION_2026-11-06.md`.
 
 Itens marcados como **proposta** e que exigem aprovação:
 

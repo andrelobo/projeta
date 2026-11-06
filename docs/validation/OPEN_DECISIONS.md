@@ -11,7 +11,7 @@
 
 | Milestone | Decisões |
 |:--|:--|
-| M0 | OPEN-002, OPEN-008 |
+| M0 | — (OPEN-002 e OPEN-008 resolvidas em 2026-11-06) |
 | M1 | OPEN-010, OPEN-011 |
 | M3 | OPEN-003, OPEN-023 |
 | M4 | OPEN-016, OPEN-018 |
@@ -28,13 +28,11 @@
 | ID | Tema | Pergunta | Impacto | Opções | Recomendação | Milestone |
 |:--|:--|:--|:--|:--|:--|:--|
 | OPEN-001 | Pagamento | Qual provedor de assinatura? | alto | Stripe, Iugu, Asaas, Pagar.me | decidir por suporte a Pix + cartão + webhooks confiáveis | M8 |
-| OPEN-002 | Migração | Qual runner de migração? | baixo | migrate-mongo, script próprio | script versionado simples, salvo necessidade | M0 |
 | OPEN-003 | Storage | Provedor e região definitivos? | alto | S3, R2, Backblaze, GCS | região com latência baixa no Brasil e custo previsível | M3 |
 | OPEN-004 | Cronograma | `stage` é entidade ou string? | médio | entidade `project_stages` vs string versionada | começar como string versionada; entidade só se houver necessidade | M7 |
 | OPEN-005 | Projeto | Haverá coautoria/múltiplos donos? | médio | dono único vs coautores | manter dono único no MVP; coautoria na Fase 2 | M7 |
 | OPEN-006 | Projeto | Reabrir projeto arquivado? | baixo | reabrir vs criar novo | criar novo projeto; arquivado é terminal | M7 |
 | OPEN-007 | Tenancy | Transferir projeto de usuário para organização? | médio | sim, auditado vs não | permitir com confirmação dupla e auditoria | M7 |
-| OPEN-008 | Observabilidade | Provedor de métricas/traces? | médio | Grafana Cloud, Datadog, self-hosted | começar com OTel + backend gerenciado | M0 |
 | OPEN-009 | LGPD | Retenção de logs? | médio | 30/90/180 dias | 90 dias, com exceção para segurança | M0 |
 | OPEN-010 | Segurança | MFA obrigatório para ADMIN? | médio | opcional vs obrigatório | obrigatório para PLATFORM_ADMIN; opcional para organização | M1 |
 | OPEN-011 | Segurança | Validade de access/refresh? | baixo | 15 min/30 d vs outros | 15 min/30 d, calibrar em staging | M1 |
@@ -76,6 +74,8 @@
 | OPEN-049 | Escopo | M08/M09 são MVP ou Fase 2? | alto | MVP vs Fase 2 | Fase 2, conforme roadmap §17 | M0 |
 | OPEN-050 | Operação | RPO/RTO de backup? | médio | 24h/4h; 8h/1h | RPO 24h, RTO 8h no MVP | M0 |
 
+> Observação: `OPEN-033` não é utilizado; a numeração canônica segue de `OPEN-032` para `OPEN-034`.
+
 ---
 
 ## 3. Decisões já encerradas
@@ -85,8 +85,12 @@
 | OPEN-052 | 2026-11-05 | Repositórios no GitHub sob o owner **`andrelobo`** (conta pessoal), **públicos**; deploy via GitHub Actions; VPS operada por `lobojoe` | Product Owner | ADR-021, ADR-022, ADR-024 |
 | OPEN-047 | 2026-11-05 | Licença **Apache-2.0** nos três repositórios | Product Owner (delegou) | ADR-025 |
 | OPEN-051 | 2026-11-05 | Previews da Vercel em modo mock; BFF apenas se necessário | Product Owner (com o plano) | ADR-023 |
+| OPEN-002 | 2026-11-06 | Runner de migração: script versionado simples com coleção `schema_migrations` | Product Owner | SPEC-000 §4.9 |
+| OPEN-008 | 2026-11-06 | Observabilidade: OpenTelemetry com backend gerenciado via OTLP; fornecedor definido até M0.6 | Product Owner | SPEC-000 §7, SYSTEM_DESIGN §13 |
+| OPEN-053 | 2026-11-06 | Emenda 02 ratificada e ADR-023 vigente | Product Owner | `PRD_ERRATA.md`, ADR-023 |
+| OPEN-054 | 2026-11-06 | `SYSTEM_DESIGN`, `DOMAIN_MODEL` e `TEST_STRATEGY` ratificados | Product Owner | respectivos documentos |
 
-As demais decisões arquiteturais estão em ADR-001 a ADR-024 (as propostas ainda dependem de aprovação).
+As decisões arquiteturais estão em ADR-001 a ADR-025; ADR-011 foi rejeitado e as demais estão aceitas.
 
 ---
 

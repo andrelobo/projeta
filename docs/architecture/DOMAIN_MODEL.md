@@ -1,7 +1,7 @@
 # DOMAIN MODEL — PROJETA
 
-**Versão:** 1.0 (proposta)
-**Status:** aguardando aprovação humana
+**Versão:** 1.0
+**Status:** Aprovado em 2026-11-06; base técnica das specs aprovadas
 **Base:** PRD 1.0 · ADR-009 (multi-tenancy) · ADR-015 (ownership) · ADR-016 (status efetivo) · ADR-017 (proposta × versão)
 **Última atualização:** 2026-11-05
 

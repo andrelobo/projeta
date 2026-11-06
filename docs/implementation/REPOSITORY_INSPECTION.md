@@ -1,5 +1,7 @@
 # Relatório de inspeção do repositório
 
+> **Nota (2026-11-06):** relatório histórico, com o estado observado em 2026-11-05. O workspace já foi convertido em três repositórios Git; o estado atual está em `CONTEXT.md` e `APPROVALS.md`.
+
 **Data:** 2026-11-05
 **Papel:** System Architect (Fase 1 do *Initial Engineering Task*)
 **Objetivo:** inspecionar o workspace antes de qualquer decisão de arquitetura ou implementação.
@@ -77,7 +79,7 @@ projeta/
     ├── architecture/
     │   ├── SYSTEM_DESIGN.md
     │   ├── DOMAIN_MODEL.md
-    │   └── ADR/ (24 ADRs + índice)
+    │   └── ADR/ (25 ADRs + índice)
     ├── specifications/ (14 specs + template + índice)
     ├── implementation/
     │   ├── REPOSITORY_INSPECTION.md

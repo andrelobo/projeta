@@ -39,15 +39,17 @@ Registro formal de mudanças aprovadas pelo Product Owner que alteram a baseline
 
 ## Emenda 02 — Autenticação entre Vercel e VPS
 
+> **Status (2026-11-06):** aprovada pelo Product Owner. O `ADR-023` está vigente.
+
 - **Data:** 2026-11-05
-- **Autoridade:** System Architect (proposta) — **pendente de aprovação**
+- **Autoridade:** Product Owner (aprovação de 2026-11-06)
 - **Altera:** detalhamento de §11 (segurança)
 - **ADR:** ADR-023
 
-### Proposta
+### Decisão
 
 - Produção e staging usam o mesmo domínio registrável (`app.<dominio>` e `api.<dominio>`), com cookie `Domain=.<dominio>`, `Secure`, `HttpOnly`, `SameSite=Lax`.
 - Previews da Vercel rodam em modo mock, sem dados reais.
 - Se preview autenticado for necessário, adotar BFF no Next (decisão futura).
 
-Enquanto não aprovada, a Emenda 02 é **proposta**, não vigente.
+A Emenda 02 está **aprovada e vigente** desde 2026-11-06.

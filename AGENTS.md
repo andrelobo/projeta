@@ -3,10 +3,10 @@
 > Instruções operacionais para agentes de engenharia (DeepSeek Harness ou equivalente) que atuam neste repositório.
 > Este arquivo governa **como** trabalhar. O **o que** construir está em `docs/product/PRD.md`, nos ADRs e nas especificações.
 
-- Versão: 1.0
-- Última atualização: 2026-11-05
-- Estado do repositório: **somente documentação**. Nenhuma aplicação foi implementada.
-- Fase atual: **Engineering Foundation 0.1** — planejamento concluído, aguardando aprovação humana.
+- Versão: 1.2
+- Última atualização: 2026-11-06
+- Estado do repositório: **somente documentação** (os repositórios de aplicação são separados). Nenhuma funcionalidade de produto foi implementada.
+- Fase atual: **Engineering Foundation 0.1** — plano, SPEC-000 a SPEC-004 e decisões de fundação aprovados; M0 desbloqueado.
 
 ---
 
@@ -50,11 +50,11 @@ Regra: **documento de baixo não sobrescreve documento de cima**. Se o código d
 
 ## 3. Estado atual (não ignorar)
 
-- O PRD foi analisado, mas **não autoriza implementação integral**.
-- Não existe código, dependências instaladas, banco, fila ou storage.
+- O PRD foi analisado e permanece como baseline; **não autoriza implementação integral**.
+- Os repositórios de aplicação já têm a fundação **M0.1/M0.2** (TypeScript strict, lint/format, config tipada e shell mínimo). **Não há funcionalidade de produto**, banco, fila ou storage conectados.
 - As decisões de fornecedor (IA, pagamento, e-mail, OCR, storage definitivo) estão **em aberto**.
-- As especificações estão em status `Rascunho` até aprovação humana.
-- **Nenhum agente deve iniciar a FASE 1 (MVP) antes da aprovação do plano** em `docs/implementation/IMPLEMENTATION_PLAN.md`.
+- **SPEC-000 a SPEC-004 estão aprovadas** (2026-11-05); **SPEC-005 a SPEC-013 seguem em `Rascunho`**.
+- **Nenhum agente deve iniciar a FASE 1 (MVP) antes da aprovação das specs correspondentes**; o M0 está desbloqueado desde 2026-11-06.
 
 ---
 
@@ -179,22 +179,25 @@ Propriedade: Product Architect é dono de `docs/product`; System Architect de `d
 
 ---
 
-## 11. Como executar (quando houver código)
+## 11. Como executar
 
-> Ainda não aplicável. Comandos previstos, a confirmar na FASE 0:
+Cada repositório tem seu próprio `package.json` e lockfile. A fundação M0.1/M0.2 já permite rodar verificações:
 
 ```bash
 # projeta-api
-docker compose -f infra/docker/compose.local.yml up -d
-pnpm install && pnpm dev        # API + worker
-pnpm test                       # unit + integração
+cp .env.example .env
+pnpm install
+pnpm start:dev                  # http://localhost:3000
+pnpm typecheck && pnpm lint && pnpm test && pnpm build
 
 # projeta-web
-pnpm install && pnpm dev        # http://localhost:3000
-pnpm test
+cp .env.example .env.local
+pnpm install
+pnpm dev                        # http://localhost:3001
+pnpm typecheck && pnpm lint && pnpm test && pnpm build
 ```
 
-Cada repositório tem seu próprio `package.json` e lockfile. Enquanto eles não existirem, estes comandos são apenas planejamento.
+O ambiente local com Mongo, Redis, MinIO e Mailpit (`docker compose`) é entregue no **M0.5**; até lá, a API não conecta em banco nem fila.
 
 ---
 

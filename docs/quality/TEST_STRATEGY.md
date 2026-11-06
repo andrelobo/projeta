@@ -1,6 +1,6 @@
 # Estratégia de testes — PROJETA
 
-**Versão:** 1.0 (proposta) · **Status:** aguardando aprovação · **Base:** PRD §19, §23, RNF-004..006
+**Versão:** 1.0 · **Status:** Aprovada em 2026-11-06 · **Base:** PRD §19, §23, RNF-004..006
 
 > Regra central: **nenhuma funcionalidade é considerada concluída sem teste que prove o comportamento e a autorização.** Screenshot ou demonstração visual não são evidência suficiente (PRD §18).
 
