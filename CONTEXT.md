@@ -39,6 +39,7 @@ Dois domínios independentes: **CULTURE** (MVP) e **HEALTH** (futuro, não funci
 | Reconciliação de status (2026-11-06) | `docs/validation/STATUS_RECONCILIATION_2026-11-06.md` |
 | Decisões abertas | `docs/validation/OPEN_DECISIONS.md` |
 | Progresso do M0 | `docs/implementation/M0_PROGRESS.md` |
+| Design (brief, paletas e tokens) | `docs/design/UX_UI_BRIEF.md`, `docs/design/COLOR_DIRECTIONS.md` |
 | Código | Fundação M0.1 a M0.3 em `projeta-api` e `projeta-web`; sem funcionalidade de produto |
 
 ## 3. Decisões já tomadas
