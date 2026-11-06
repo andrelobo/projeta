@@ -12,7 +12,7 @@ O PRD §9.1 sugeria monorepo com `apps/` e `packages/`. O Product Owner definiu 
 
 ## Decisão
 
-Adotar **polyrepo no GitHub** com três repositórios independentes (privados, salvo decisão em contrário):
+Adotar **polyrepo no GitHub** com três repositórios independentes e **públicos**:
 
 | Repositório | Conteúdo | Deploy |
 |:--|:--|:--|
@@ -32,7 +32,7 @@ Regras:
 
 - Owner: **`andrelobo`** (conta de usuário no GitHub; não é organização).
 - Visibilidade: **pública** para os três repositórios (decisão do owner em 2026-11-05).
-- Repositórios públicos exigem: licença definida (`OPEN-047`), secret scanning com push protection, Dependabot, CodeQL e revisão do que entra em `docs/` (roadmap e decisões ficam visíveis).
+- Repositórios públicos exigem: licença definida (Apache-2.0, ADR-025), secret scanning com push protection, Dependabot, CodeQL e revisão do que entra em `docs/` (roadmap e decisões ficam visíveis).
 - Consequência operacional: a sessão `gh` local já está autenticada como `andrelobo` (owner). O usuário `lobojoe` é da VPS, não do GitHub (ver ADR-022).
 - `main` protegida: PR obrigatório, revisão, checks verdes, histórico linear, sem force push.
 - `CODEOWNERS` por área (frontend, backend, infra, docs).

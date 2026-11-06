@@ -64,6 +64,7 @@ Sequência do `release.yml`:
 | `VPS_SSH_KEY` / `VPS_KNOWN_HOSTS` | Environment | SSH seguro |
 | `GITHUB_TOKEN` | workflow | GHCR (`packages: write`) |
 | `GHCR_READ_TOKEN` | Environment + VPS | pull da imagem privada (`read:packages`) |
+| `NODE_AUTH_TOKEN` | Vercel + GitHub Actions | leitura de `@projeta/contracts` no GitHub Packages (`read:packages`) |
 
 ## Consequências
 

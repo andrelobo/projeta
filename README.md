@@ -9,7 +9,7 @@
 - Stack: Next.js · TypeScript · NestJS · MongoDB · Redis · LLM APIs
 
 > **Estado do repositório: documentação apenas.**
-> Nenhuma linha de aplicação foi escrita. A implementação depende de aprovação do plano em [`docs/implementation/IMPLEMENTATION_PLAN.md`](docs/implementation/IMPLEMENTATION_PLAN.md).
+> Nenhuma funcionalidade de produto foi implementada. A fundação técnica (M0.1/M0.2) está pronta em `projeta-api` e `projeta-web`; o plano, o primeiro bloco de specs (SPEC-000 a SPEC-004) e as decisões de fundação foram aprovados. Ver [`docs/implementation/APPROVALS.md`](docs/implementation/APPROVALS.md) e [`docs/implementation/M0_PROGRESS.md`](docs/implementation/M0_PROGRESS.md).
 
 ---
 

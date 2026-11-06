@@ -2,7 +2,7 @@
 
 Especificações implementáveis derivadas do PRD 1.0. Cada spec é a unidade de aprovação e de implementação. **Nenhuma linha de código deve existir sem spec aprovada.**
 
-- Status atual: todas em **Rascunho** (aguardando aprovação humana).
+- Status atual: **SPEC-000 a SPEC-004 aprovadas** (2026-11-05); **SPEC-005 a SPEC-013 em Rascunho**.
 - Template: [`_TEMPLATE.md`](_TEMPLATE.md)
 - Modelo de domínio: [`../architecture/DOMAIN_MODEL.md`](../architecture/DOMAIN_MODEL.md)
 - Arquitetura: [`../architecture/SYSTEM_DESIGN.md`](../architecture/SYSTEM_DESIGN.md)

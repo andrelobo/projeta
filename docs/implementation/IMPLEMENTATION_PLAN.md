@@ -4,6 +4,8 @@
 **Status:** Aprovado em 2026-11-05 pelo Product Owner
 **Regra:** nenhuma linha de aplicação é escrita antes da aprovação deste plano.
 
+> **Atualização de status (2026-11-06):** SPEC-000 a SPEC-004 aprovadas, OPEN-002/OPEN-008 resolvidas e ausência de dados reais confirmada. O M0 está desbloqueado. Ver `APPROVALS.md`.
+
 ---
 
 ## 1. Premissas
@@ -40,6 +42,8 @@
 ### M0 — Fundação técnica
 
 **Objetivo:** um esqueleto executável, observável e testável, sem regra de negócio.
+
+> **Progresso (2026-11-06):** M0.1 e M0.2 concluídos. Evidências e pendências manuais em `M0_PROGRESS.md`.
 
 | # | Incremento | Entrega verificável |
 |:--|:--|:--|
@@ -233,8 +237,8 @@ Um milestone só é concluído quando:
 
 | Milestone | Decisão necessária | ID |
 |:--|:--|:--|
-| M0 | ferramenta de migração; observabilidade; criação dos repositórios em `andrelobo`; usuário `lobojoe` na VPS | OPEN-002, OPEN-008 |
-| M1 | validade de tokens; MFA para admin; auth em previews | OPEN-011, OPEN-010, OPEN-051 |
+| M0 | — (OPEN-002 e OPEN-008 resolvidas em 2026-11-06) | — |
+| M1 | validade de tokens; MFA para admin | OPEN-011, OPEN-010 |
 | M3 | storage definitivo e região | OPEN-003 |
 | M3 | retenção de documentos | OPEN-023 |
 | M4 | vocabulário de modalidade; janela de verificação | OPEN-016, OPEN-018 |
@@ -244,7 +248,7 @@ Um milestone só é concluído quando:
 | M7 | autosave vs versão explícita | OPEN-030 |
 | M8 | provedor de pagamento; limites e preços | OPEN-001, OPEN-025 |
 | M8 | política de trial e cancelamento | OPEN-042 |
-| Transversal | licença, retenção de logs/auditoria | OPEN-047, OPEN-009, OPEN-045 |
+| Transversal | retenção de logs/auditoria | OPEN-009, OPEN-045 |
 
 ---
 
@@ -267,7 +271,7 @@ Um milestone só é concluído quando:
 
 - Não define datas ou prazos comerciais.
 - Não define fornecedores.
-- Não autoriza implementação.
+- Não autoriza implementação fora do escopo aprovado; o M0 depende dos itens pendentes do §9.
 - Não substitui as specs.
 - Não cobre a Fase 2 (orçamento e cronograma — SPEC-009), nem HEALTH, marketplace, colaboração avançada ou analytics (Fases 3–4).
 
@@ -279,8 +283,8 @@ Para iniciar M0, são necessários:
 
 - [x] Aprovação deste plano (2026-11-05).
 - [x] ADR-012 a ADR-025 aprovados (ADR-011 rejeitado).
-- [ ] Aprovação das specs SPEC-000 a SPEC-004 (primeiro bloco).
-- [ ] Resolução de OPEN-002 e OPEN-008.
+- [x] Aprovação das specs SPEC-000 a SPEC-004 (2026-11-05; ver `APPROVALS.md`).
+- [x] Resolução de OPEN-002 e OPEN-008 (2026-11-06).
 - [x] Criação dos três repositórios em `github.com/andrelobo`.
-- [x] Licença definida (Apache-2.0).
-- [ ] Confirmação de que não há dado real de cliente no ambiente de desenvolvimento.
+- [x] Licença definida (Apache-2.0) e aplicada aos três repositórios.
+- [x] Confirmação de que não há dado real de cliente no ambiente de desenvolvimento (2026-11-06).

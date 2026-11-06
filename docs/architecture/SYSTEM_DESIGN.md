@@ -1,7 +1,7 @@
 # SYSTEM DESIGN — PROJETA
 
-**Versão:** 1.0 (proposta)
-**Status:** aguardando aprovação humana
+**Versão:** 1.0
+**Status:** Aprovado em 2026-11-06; base técnica das specs aprovadas
 **Base:** PRD 1.0 + Emenda 01 · ADR-001 a ADR-010 (aceitos) · ADR-011 (rejeitado) · ADR-012 a ADR-025 (aceitos)
 **Última atualização:** 2026-11-05
 
@@ -125,7 +125,7 @@ Apenas `docs/` e arquivos de processo. **Nenhum código de aplicação.** Não t
 - Fonte de verdade: schemas Zod em `projeta-api/packages/contracts`.
 - Publicação: pacote `@projeta/contracts` no GitHub Packages, em tags `contracts-vX.Y.Z` (repositórios públicos; imagem GHCR privada).
 - `openapi.json` é gerado no release da API e anexado ao pacote/artefato.
-- `projeta-web` fixa versão exata no `package.json` e gera o client a partir do OpenAPI.
+- `projeta-web` fixa versão exata no `package.json`, gera o client a partir do OpenAPI e usa `NODE_AUTH_TOKEN` (`read:packages`) no install. Ver `docs/implementation/GITHUB_PACKAGES.md`.
 - Mudança incompatível: major + `/api/v2` + PR coordenado nos dois repositórios.
 - CI do web falha se a versão do contrato divergir do OpenAPI esperado.
 

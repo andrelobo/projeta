@@ -3,7 +3,7 @@
 | Campo | Valor |
 |:--|:--|
 | ID | SPEC-000 |
-| Versão | 0.1 |
+| Versão | 0.1.1 |
 | Status | Aprovada (2026-11-05) |
 | Fase | 0 |
 | Dono | System Architect |
@@ -61,7 +61,7 @@ Esta spec **não** implementa regra de negócio.
 8. **Feature flags**: coleção `feature_flags` com cache; flag `domain.health.enabled = false` no MVP.
 9. **Migrações**: runner versionado com coleção `schema_migrations`; execução como job, nunca no boot.
 10. **Contratos**: schemas em `projeta-api/packages/contracts`, publicados como `@projeta/contracts` (GitHub Packages) e `openapi.json`; `projeta-web` fixa a versão exata.
-10. **Shell do frontend**: layout, tema, componentes de erro/vazio/carregamento, foco visível, contraste AA.
+11. **Shell do frontend**: layout, tema, componentes de erro/vazio/carregamento, foco visível, contraste AA.
 
 ## 5. Modelo de dados (infra)
 
@@ -213,3 +213,4 @@ Cenário: idempotência evita duplicidade
 | Data | Versão | Autor | Alteração |
 |:--|:--|:--|:--|
 | 2026-11-05 | 0.1 | System Architect | criação |
+| 2026-11-06 | 0.1.1 | System Architect | correção editorial da numeração da seção 4 (dois itens “10.”) |
