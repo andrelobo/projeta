@@ -80,7 +80,7 @@ Este documento avalia quatro direções cromáticas para um produto cultural, so
 | `bg-surface` | `#201A15` | cartões, modais |
 | `bg-subtle` | `#2A231C` | hover, faixas |
 | `border-subtle` | `#3B332A` | divisórias |
-| `border-strong` | `#6B6155` | borda de input |
+| `border-strong` | `#7A6F61` | borda de input |
 | `text` | `#F5F0E8` | texto principal |
 | `text-muted` | `#BDB3A6` | texto secundário |
 | `primary` | `#E89B7E` | ação principal |

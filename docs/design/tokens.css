@@ -1,0 +1,255 @@
+/* ==========================================================================
+   PROJETA — design tokens
+   Versão 1.0 — 2026-11-06
+
+   Regras:
+   - Componentes usam apenas tokens semânticos.
+   - Tema claro é o padrão (:root).
+   - Tema escuro é ativado por [data-theme="dark"].
+   - [data-theme="system"] segue prefers-color-scheme.
+   - Nenhum hex, px ou sombra hardcoded em componente.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Cor — superfícies */
+  --pj-color-bg-canvas: #faf8f5;
+  --pj-color-bg-surface: #ffffff;
+  --pj-color-bg-subtle: #f0ebe4;
+  --pj-color-bg-inverse: #1c1917;
+
+  /* Cor — bordas */
+  --pj-color-border-subtle: #d9d2c7;
+  --pj-color-border-strong: #857c71;
+
+  /* Cor — texto */
+  --pj-color-text: #1c1917;
+  --pj-color-text-muted: #5a534a;
+  --pj-color-text-inverse: #f5f0e8;
+
+  /* Cor — marca e ação */
+  --pj-color-primary: #9e3b26;
+  --pj-color-primary-hover: #7e2e1d;
+  --pj-color-primary-soft: #f6e3dd;
+  --pj-color-on-primary: #ffffff;
+
+  --pj-color-accent: #1f6f63;
+  --pj-color-accent-hover: #17564c;
+  --pj-color-accent-soft: #e3f0ed;
+  --pj-color-on-accent: #ffffff;
+
+  --pj-color-highlight: #c98a2e;
+  --pj-color-on-highlight: #1c1917;
+
+  /* Cor — foco e seleção */
+  --pj-color-focus: #0b5fa5;
+  --pj-color-selection-bg: #f6e3dd;
+  --pj-color-selection-text: #1c1917;
+
+  /* Cor — estados */
+  --pj-color-success: #2f6b47;
+  --pj-color-success-soft: #e6f2ea;
+  --pj-color-warning: #8a5a00;
+  --pj-color-warning-soft: #fdf0d2;
+  --pj-color-danger: #a3241c;
+  --pj-color-danger-soft: #fbe7e5;
+  --pj-color-info: #1d5a8a;
+  --pj-color-info-soft: #e5eff8;
+
+  /* Tipografia — famílias */
+  --pj-font-display: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --pj-font-ui: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --pj-font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  /* Tipografia — escala */
+  --pj-text-xs: 0.75rem;
+  --pj-text-sm: 0.875rem;
+  --pj-text-base: 1rem;
+  --pj-text-lg: 1.125rem;
+  --pj-text-xl: 1.25rem;
+  --pj-text-2xl: 1.5rem;
+  --pj-text-3xl: 1.875rem;
+  --pj-text-4xl: 2.25rem;
+  --pj-text-5xl: 3rem;
+
+  /* Tipografia — pesos */
+  --pj-weight-regular: 400;
+  --pj-weight-medium: 500;
+  --pj-weight-semibold: 600;
+  --pj-weight-bold: 700;
+
+  /* Tipografia — entrelinha */
+  --pj-leading-tight: 1.1;
+  --pj-leading-snug: 1.2;
+  --pj-leading-normal: 1.4;
+  --pj-leading-relaxed: 1.6;
+
+  /* Tipografia — espaçamento entre letras */
+  --pj-tracking-tight: -0.02em;
+  --pj-tracking-normal: 0;
+  --pj-tracking-wide: 0.02em;
+  --pj-tracking-caps: 0.08em;
+
+  /* Espaço — base 4 px */
+  --pj-space-0: 0;
+  --pj-space-1: 0.25rem;
+  --pj-space-2: 0.5rem;
+  --pj-space-3: 0.75rem;
+  --pj-space-4: 1rem;
+  --pj-space-5: 1.25rem;
+  --pj-space-6: 1.5rem;
+  --pj-space-8: 2rem;
+  --pj-space-10: 2.5rem;
+  --pj-space-12: 3rem;
+  --pj-space-16: 4rem;
+  --pj-space-20: 5rem;
+  --pj-space-24: 6rem;
+
+  /* Raio */
+  --pj-radius-xs: 0.125rem;
+  --pj-radius-sm: 0.25rem;
+  --pj-radius-md: 0.375rem;
+  --pj-radius-lg: 0.5rem;
+  --pj-radius-xl: 0.75rem;
+  --pj-radius-full: 9999px;
+
+  /* Borda */
+  --pj-border-width: 1px;
+  --pj-border-width-strong: 2px;
+  --pj-border-width-focus: 3px;
+
+  /* Sombra — quente, discreta */
+  --pj-shadow-sm: 0 1px 2px rgb(28 25 23 / 8%);
+  --pj-shadow-md: 0 4px 12px rgb(28 25 23 / 10%);
+  --pj-shadow-lg: 0 12px 32px rgb(28 25 23 / 14%);
+
+  /* Movimento */
+  --pj-motion-fast: 120ms;
+  --pj-motion-base: 180ms;
+  --pj-motion-slow: 240ms;
+  --pj-ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --pj-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Foco */
+  --pj-focus-width: 3px;
+  --pj-focus-offset: 2px;
+
+  /* Camadas */
+  --pj-z-base: 0;
+  --pj-z-dropdown: 100;
+  --pj-z-sticky: 200;
+  --pj-z-overlay: 300;
+  --pj-z-modal: 400;
+  --pj-z-toast: 500;
+  --pj-z-skip-link: 600;
+}
+
+/* Tema escuro — escolha explícita */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --pj-color-bg-canvas: #16130f;
+  --pj-color-bg-surface: #201a15;
+  --pj-color-bg-subtle: #2a231c;
+  --pj-color-bg-inverse: #f5f0e8;
+
+  --pj-color-border-subtle: #3b332a;
+  --pj-color-border-strong: #7a6f61;
+
+  --pj-color-text: #f5f0e8;
+  --pj-color-text-muted: #bdb3a6;
+  --pj-color-text-inverse: #1c1917;
+
+  --pj-color-primary: #e89b7e;
+  --pj-color-primary-hover: #f0b49b;
+  --pj-color-primary-soft: #3a241c;
+  --pj-color-on-primary: #16130f;
+
+  --pj-color-accent: #6fc3b2;
+  --pj-color-accent-hover: #8ad4c3;
+  --pj-color-accent-soft: #17332c;
+  --pj-color-on-accent: #16130f;
+
+  --pj-color-highlight: #e8b75e;
+  --pj-color-on-highlight: #16130f;
+
+  --pj-color-focus: #7fc7f0;
+  --pj-color-selection-bg: #3a241c;
+  --pj-color-selection-text: #f5f0e8;
+
+  --pj-color-success: #7fc7a0;
+  --pj-color-success-soft: #1b3328;
+  --pj-color-warning: #e8b75e;
+  --pj-color-warning-soft: #3a2c14;
+  --pj-color-danger: #f0907e;
+  --pj-color-danger-soft: #3d1f1b;
+  --pj-color-info: #8fbee8;
+  --pj-color-info-soft: #1b2c3d;
+
+  --pj-shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --pj-shadow-md: 0 4px 12px rgb(0 0 0 / 48%);
+  --pj-shadow-lg: 0 12px 32px rgb(0 0 0 / 56%);
+}
+
+/* “Seguir o sistema” — só quando a pessoa escolhe */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme='system'] {
+    color-scheme: dark;
+
+    --pj-color-bg-canvas: #16130f;
+    --pj-color-bg-surface: #201a15;
+    --pj-color-bg-subtle: #2a231c;
+    --pj-color-bg-inverse: #f5f0e8;
+
+    --pj-color-border-subtle: #3b332a;
+    --pj-color-border-strong: #7a6f61;
+
+    --pj-color-text: #f5f0e8;
+    --pj-color-text-muted: #bdb3a6;
+    --pj-color-text-inverse: #1c1917;
+
+    --pj-color-primary: #e89b7e;
+    --pj-color-primary-hover: #f0b49b;
+    --pj-color-primary-soft: #3a241c;
+    --pj-color-on-primary: #16130f;
+
+    --pj-color-accent: #6fc3b2;
+    --pj-color-accent-hover: #8ad4c3;
+    --pj-color-accent-soft: #17332c;
+    --pj-color-on-accent: #16130f;
+
+    --pj-color-highlight: #e8b75e;
+    --pj-color-on-highlight: #16130f;
+
+    --pj-color-focus: #7fc7f0;
+    --pj-color-selection-bg: #3a241c;
+    --pj-color-selection-text: #f5f0e8;
+
+    --pj-color-success: #7fc7a0;
+    --pj-color-success-soft: #1b3328;
+    --pj-color-warning: #e8b75e;
+    --pj-color-warning-soft: #3a2c14;
+    --pj-color-danger: #f0907e;
+    --pj-color-danger-soft: #3d1f1b;
+    --pj-color-info: #8fbee8;
+    --pj-color-info-soft: #1b2c3d;
+
+    --pj-shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+    --pj-shadow-md: 0 4px 12px rgb(0 0 0 / 48%);
+    --pj-shadow-lg: 0 12px 32px rgb(0 0 0 / 56%);
+  }
+}
+
+/* Breakpoints (documentação; media queries não aceitam custom properties)
+   --pj-bp-sm: 480px
+   --pj-bp-md: 768px
+   --pj-bp-lg: 1024px
+   --pj-bp-xl: 1280px
+   --pj-bp-2xl: 1440px
+*/
+
+::selection {
+  background: var(--pj-color-selection-bg);
+  color: var(--pj-color-selection-text);
+}
