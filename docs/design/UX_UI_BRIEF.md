@@ -2,10 +2,12 @@
 
 > **Como usar:** este documento é um prompt pronto para um agente de design (OpenDesign, Figma AI, v0, Claude, etc.). Copie o conteúdo a partir da seção 0. Se a ferramenta tiver acesso ao repositório, peça para ler os arquivos citados na seção 1.
 >
-> **Versão:** 1.1 — 2026-11-06
+> **Versão:** 1.2 — 2026-11-06
 > **Fontes:** PRD §3, §4, §13, §14; SPEC-000; SYSTEM_DESIGN; estado atual de `projeta-web`.
 > **Decisão de tema:** tema **claro como padrão**; tema escuro disponível como escolha explícita.
 > **Paletas avaliadas:** [`COLOR_DIRECTIONS.md`](COLOR_DIRECTIONS.md).
+> **Marca:** [`BRAND.md`](BRAND.md) e [`assets/`](assets/).
+> **Tokens:** [`TOKENS.json`](TOKENS.json) e [`tokens.css`](tokens.css).
 
 ---
 
@@ -297,12 +299,15 @@ Para J01–J05, entregue diagramas (Mermaid ou equivalente) com:
 
 ### 7.3 Telas prioritárias
 
-**M0.4 — shell**
+**M0.4 — shell e telas padrão de validação**
 - Layout do app autenticado e não autenticado.
 - Sidebar/topbar responsivas.
 - Contêiner de conteúdo, cabeçalho de página e ações.
 - `404`, `500`, carregamento, vazio e skip link.
 - Tema claro padrão, tema escuro opcional e foco visível.
+- **Cadastro:** tela de criação de conta para validar formulário, validação, senha, confirmação e estados de erro/sucesso. Sem persistência real no M0.4.
+- **Dashboard:** visão inicial com prazos, oportunidades, projetos e pendências (RF-100), usando dados fictícios.
+- **Relatórios:** tela de tabela densa, filtros e exportação para validar o padrão de listagem e leitura de dados. O módulo de relatórios do PRD está na Fase 4; no M0.4 esta tela é **demonstração de design system**, não funcionalidade de produto.
 
 **MVP prioritário**
 - Login, cadastro, confirmação de e-mail e recuperação de senha.
@@ -452,14 +457,22 @@ Ao final de cada rodada, informe o que mudou, o que ficou em aberto e qual é o 
 
 ---
 
-## 13. Perguntas que você deve fazer antes de finalizar
+## 13. Decisões do product owner (2026-11-06)
 
-1. A marca deve soar mais **institucional/confiável** ou mais **contemporânea/cultural**?
-2. O logo precisa funcionar ao lado de logos de funders e instituições? Em que contexto?
-3. Há restrição de cor, tipografia ou uso de imagem vinda de marca existente?
-4. O tema escuro deve seguir o sistema por padrão ou só por escolha explícita? (Decisão atual: claro padrão, escuro opcional.)
-5. Quais telas entram no M0.4 e quais ficam para os milestones seguintes?
-6. Existe alguma referência visual admirada ou explicitamente rejeitada?
-7. O produto terá material impresso ou apenas interface digital?
+| # | Pergunta | Decisão |
+|:--|:--|:--|
+| 1 | Institucional ou contemporânea/cultural? | **Contemporânea cultural**, com leitura institucional suficiente para coexistir com funders. |
+| 2 | Precisa funcionar ao lado de logos de funders e instituições? | **Sim.** Entregar versão monocromática e regras de co-branding. |
+| 3 | Restrição de cor, tipografia ou imagem de marca existente? | **Não.** Marca nova, sem legado visual. |
+| 4 | Tema escuro por sistema ou escolha explícita? | **Claro é o padrão.** Escuro só por escolha da pessoa; “seguir o sistema” é opção explícita. |
+| 5 | Quais telas entram no M0.4? | **Máximo de telas padrão para teste:** cadastro, dashboard e relatórios (este último como padrão de UI, pois o módulo está na Fase 4 do PRD). |
+| 6 | Referência visual admirada ou rejeitada? | Nenhuma referência específica. Valem as restrições e os clichês proibidos deste brief. |
+| 7 | Material impresso? | **Sim.** O logo e os tokens precisam funcionar em impressão, com CMYK de referência e prova física. |
+
+### Perguntas ainda abertas
+
+- O logo será usado em muro, palco ou backdrop de grande formato? Há restrição de reprodução?
+- Existe previsão de selo/certificado impresso com o logo?
+- O material impresso terá papel e acabamento definidos pela gráfica?
 
 Se a resposta não existir, assuma o padrão mais conservador, registre a suposição e siga.
