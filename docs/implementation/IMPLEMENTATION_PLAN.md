@@ -43,7 +43,7 @@
 
 **Objetivo:** um esqueleto executável, observável e testável, sem regra de negócio.
 
-> **Progresso (2026-11-06):** M0.1 e M0.2 concluídos. Evidências e pendências manuais em `M0_PROGRESS.md`.
+> **Progresso (2026-11-06):** M0.1, M0.2 e M0.3 concluídos. Evidências e pendências manuais em `M0_PROGRESS.md`.
 
 | # | Incremento | Entrega verificável |
 |:--|:--|:--|

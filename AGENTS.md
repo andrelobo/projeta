@@ -51,7 +51,7 @@ Regra: **documento de baixo não sobrescreve documento de cima**. Se o código d
 ## 3. Estado atual (não ignorar)
 
 - O PRD foi analisado e permanece como baseline; **não autoriza implementação integral**.
-- Os repositórios de aplicação já têm a fundação **M0.1/M0.2** (TypeScript strict, lint/format, config tipada e shell mínimo). **Não há funcionalidade de produto**, banco, fila ou storage conectados.
+- Os repositórios de aplicação já têm a fundação **M0.1 a M0.3** (TypeScript strict, lint/format, config tipada, shell mínimo, health e Problem Details). **Não há funcionalidade de produto**, banco, fila ou storage conectados.
 - As decisões de fornecedor (IA, pagamento, e-mail, OCR, storage definitivo) estão **em aberto**.
 - **SPEC-000 a SPEC-004 estão aprovadas** (2026-11-05); **SPEC-005 a SPEC-013 seguem em `Rascunho`**.
 - **Nenhum agente deve iniciar a FASE 1 (MVP) antes da aprovação das specs correspondentes**; o M0 está desbloqueado desde 2026-11-06.

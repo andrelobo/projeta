@@ -18,7 +18,7 @@
 | ADR-012 a ADR-025 | Aceitos | `docs/architecture/ADR/`, `APPROVALS.md` |
 | SPEC-000 a SPEC-004 | Aprovadas em 2026-11-05 | cabeçalho das specs, `APPROVALS.md` |
 | SPEC-005 a SPEC-013 | Rascunho | cabeçalho das specs |
-| Código de aplicação | Fundação M0.1/M0.2 (sem funcionalidade de produto) | `projeta-api/`, `projeta-web/`, `M0_PROGRESS.md` |
+| Código de aplicação | Fundação M0.1 a M0.3 (sem funcionalidade de produto) | `projeta-api/`, `projeta-web/`, `M0_PROGRESS.md` |
 | Licença | Apache-2.0 nos três repositórios | `LICENSE` em `projeta/`, `projeta-api/`, `projeta-web/` |
 
 **Gate do M0:** plano e primeiro bloco de specs aprovados; ainda pendentes **OPEN-002** (runner de migração), **OPEN-008** (observabilidade) e a confirmação de que não há dado real de cliente no ambiente de desenvolvimento.
